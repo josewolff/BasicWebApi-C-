@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{158DA132-456E-4838-8244-C04ACB2C7F72}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/UsersDb.cs">
+    <Files>
+      <File FileName="Controllers/Users.cs" Line="84" Column="45" />
+      <File FileName="Models/UsersDb.cs" Line="11" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TestVS PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/josea.wolff/Desktop/vs/TestVS/TestVS/Models</String>
+  </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/josea.wolff/Desktop/vs/TestVS/TestVS/UsersDb.cs" relfile="UsersDb.cs" line="10" column="1" />
+      <Breakpoint file="/Users/josea.wolff/Desktop/vs/TestVS/TestVS/UsersDb.cs" relfile="UsersDb.cs" line="11" column="1" />
+      <Breakpoint file="/Users/josea.wolff/Desktop/vs/TestVS/TestVS/Controllers/Users.cs" relfile="Controllers/Users.cs" line="59" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
