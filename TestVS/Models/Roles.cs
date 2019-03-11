@@ -1,22 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace TestVS.Models
 {
-    public class Users
+    public class Roles
     {
         [Key]
         public int Id { get; set; }
 
         [Required]
-        public string UserName { get; set; }
+        public int RoleId { get; set; }
 
         [Required]
-        public string FirstName { get; set; }
+        public string RoleName { get; set; }
 
         [Required]
-        public string LastName { get; set; }
+        public String Description { get; set; }
 
+
+        public Users Users { get; set; }
     }
 }

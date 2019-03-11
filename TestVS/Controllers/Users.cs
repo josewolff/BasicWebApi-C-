@@ -20,23 +20,23 @@ namespace TestVS.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Users>> Get()
         {
-            using (UsersDb db = new UsersDb())
+            using (DbConnection db = new DbConnection())
             {
                 return db.Users.ToList();
             }
         }
 
         // GET api/users/5
-        [HttpGet("{id}")]
-        public Object Get(int id)
+        [HttpGet("{userName}")]
+        public Object Get(String userName)
         {
-            using (UsersDb db = new UsersDb())
+            using (DbConnection db = new DbConnection())
             {
                
-                Users result = db.Users.FirstOrDefault(User => User.Id == id);
+                Users result = db.Users.FirstOrDefault(User => User.UserName.ToUpper().Equals(userName.ToUpper()));
                 if(result == null)
                 {
-                    String notFoundMessage = "{\"status\":0,\"Message\":\"The id " + id + " not exists.\"}";
+                    String notFoundMessage = "{\"status\":0,\"Message\":\"The UserName " + userName + " not exists.\"}";
                     return Content(notFoundMessage, "application/json");
                 }
                 return result;
@@ -44,14 +44,15 @@ namespace TestVS.Controllers
         }
 
         // POST api/users
+        [Route("add")]
         [HttpPost]
         public Object Post([FromBody] Newtonsoft.Json.Linq.JObject value)
         {
             Users posted = value.ToObject<Users>();
             String postResult = "";
-            using (UsersDb db = new UsersDb())
+            using (DbConnection db = new DbConnection())
             {
-                String userNameToPost = value.GetValue("userName").ToString();
+                String userNameToPost = value.GetValue("UserName").ToString();
                 List<Users> existingUsers = db.Users.Where(User => User.UserName == userNameToPost).ToList();
                 if (existingUsers.Count == 0)
                 {
@@ -70,22 +71,23 @@ namespace TestVS.Controllers
 
 
         // DELETE api/users/5
-        [HttpDelete("{id}")]
-        public Object Delete(int id)
+        [Route("remove/{userName}")]
+        [HttpDelete("{userName}")]
+        public Object Delete(String userName)
         {
             String deleteResult = "";
-            using (UsersDb db = new UsersDb())
+            using (DbConnection db = new DbConnection())
             {
 
-                if (db.Users.Where(t => t.Id == id).Count() > 0)
+                if (db.Users.Where(t => t.UserName.ToUpper().Equals(userName.ToUpper())).Count() > 0)
                 {
-                    deleteResult = "{\"status\":1,\"Message\":\"Id: " + id + " deleted.\"}";
-                    db.Users.Remove(db.Users.First(t => t.Id == id));
+                    deleteResult = "{\"status\":1,\"Message\":\"UserName: " + userName + " deleted.\"}";
+                    db.Users.Remove(db.Users.First(t => t.UserName.ToUpper().Equals(userName.ToUpper())));
                     db.SaveChanges();
                 }
                 else
                 {
-                    deleteResult = "{\"status\":0,\"Message\":\"The Id: " + id + " doesnt exists.\"}";
+                    deleteResult = "{\"status\":0,\"Message\":\"The UserName: " + userName + " doesnt exists.\"}";
                 }
 
             }
