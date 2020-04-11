@@ -12,3 +12,17 @@
 /Users/josea.wolff/Desktop/vs/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.RazorTargetAssemblyInfo.cache
 /Users/josea.wolff/Desktop/vs/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.dll
 /Users/josea.wolff/Desktop/vs/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.pdb
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/bin/Debug/netcoreapp2.1/TestVS.deps.json
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/bin/Debug/netcoreapp2.1/TestVS.runtimeconfig.json
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/bin/Debug/netcoreapp2.1/TestVS.runtimeconfig.dev.json
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/bin/Debug/netcoreapp2.1/TestVS.dll
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/bin/Debug/netcoreapp2.1/TestVS.pdb
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.csprojAssemblyReference.cache
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.csproj.CoreCompileInputs.cache
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.RazorAssemblyInfo.cache
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.RazorAssemblyInfo.cs
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.AssemblyInfoInputs.cache
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.AssemblyInfo.cs
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.RazorTargetAssemblyInfo.cache
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.dll
+/Users/josea.wolff/Documents/UFM/VisualStudio/TestVS/TestVS/obj/Debug/netcoreapp2.1/TestVS.pdb
